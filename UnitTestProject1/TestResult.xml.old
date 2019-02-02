@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Failed" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="3" engine-version="3.9.0.0" clr-version="4.0.30319.42000" start-time="2019-02-01 20:47:21Z" end-time="2019-02-01 20:48:58Z" duration="97.242759">
+  <command-line><![CDATA[C:\Users\liran\Downloads\NUnit.Console-3.9.0\nunit3-console.exe  "C:\Users\liran\Documents\Visual Studio 2017\Projects\UnitTestProject1\UnitTestProject1\bin\Debug\UnitTestProject1.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="UnitTestProject1.dll" fullname="UnitTestProject1.dll" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2019-02-01 20:47:22Z" end-time="2019-02-01 20:48:58Z" duration="95.912326" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="3">
+    <environment framework-version="3.11.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17134.0" platform="Win32NT" cwd="C:\Users\liran\Documents\Visual Studio 2017\Projects\UnitTestProject1\UnitTestProject1" machine-name="DELL-LAPTOP-500" user="liran" user-domain="DELL-LAPTOP-500" culture="he-IL" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\liran\Documents\Visual Studio 2017\Projects\UnitTestProject1\UnitTestProject1" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="11840" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1004" name="UnitTestProject1" fullname="UnitTestProject1" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2019-02-01 20:47:22Z" end-time="2019-02-01 20:48:58Z" duration="95.885399" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="3">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="0-1000" name="UnitTest1" fullname="UnitTestProject1.UnitTest1" classname="UnitTestProject1.UnitTest1" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2019-02-01 20:47:22Z" end-time="2019-02-01 20:48:58Z" duration="95.878428" total="2" passed="0" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="3">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="0-1002" name="TestMethod2" fullname="UnitTestProject1.UnitTest1.TestMethod2" methodname="TestMethod2" classname="UnitTestProject1.UnitTest1" runstate="Runnable" seed="371997176" result="Failed" start-time="2019-02-01 20:47:22Z" end-time="2019-02-01 20:48:44Z" duration="82.259829" asserts="2">
+          <properties>
+            <property name="Category" value="LongRunning" />
+            <property name="ParallelScope" value="Self" />
+            <property name="Order" value="2" />
+            <property name="Repeat" value="1" />
+          </properties>
+          <failure>
+            <message><![CDATA[  The title is wrong
+  Expected: True
+  But was:  False
+]]></message>
+            <stack-trace><![CDATA[   at UnitTestProject1.UnitTest1.TestMethod2() in C:\Users\liran\Documents\Visual Studio 2017\Projects\UnitTestProject1\UnitTestProject1\UnitTest1.cs:line 86
+]]></stack-trace>
+          </failure>
+          <output><![CDATA[Hi Hi World
+All Good
+]]></output>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  The title is wrong
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[   at UnitTestProject1.UnitTest1.TestMethod2() in C:\Users\liran\Documents\Visual Studio 2017\Projects\UnitTestProject1\UnitTestProject1\UnitTest1.cs:line 86
+]]></stack-trace>
+            </assertion>
+          </assertions>
+          <attachments>
+            <attachment>
+              <filePath>C:\Users\liran\AppData\Local\Temp\test.logger.txt</filePath>
+              <description><![CDATA[log]]></description>
+            </attachment>
+          </attachments>
+        </test-case>
+        <test-case id="0-1001" name="TestMethod1" fullname="UnitTestProject1.UnitTest1.TestMethod1" methodname="TestMethod1" classname="UnitTestProject1.UnitTest1" runstate="Runnable" seed="1942408520" result="Failed" label="Error" start-time="2019-02-01 20:47:22Z" end-time="2019-02-01 20:48:58Z" duration="95.863808" asserts="1">
+          <properties>
+            <property name="Category" value="LongRunning" />
+            <property name="ParallelScope" value="Self" />
+            <property name="Order" value="1" />
+          </properties>
+          <failure>
+            <message><![CDATA[OpenQA.Selenium.WebDriverException : The HTTP request to the remote WebDriver server for URL http://localhost:64445/session/f60f0f31dd48aff9ac9ebe3e0949f75e/element/0.538706525585877-1/click timed out after 60 seconds.
+  ----> System.Net.WebException : The operation has timed out]]></message>
+            <stack-trace><![CDATA[   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+   at UnitTestProject1.UnitTest1.TestMethod1() in C:\Users\liran\Documents\Visual Studio 2017\Projects\UnitTestProject1\UnitTestProject1\UnitTest1.cs:line 47
+--WebException
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)]]></stack-trace>
+          </failure>
+          <output><![CDATA[Hi Hi World
+All Good
+]]></output>
+          <attachments>
+            <attachment>
+              <filePath>C:\Users\liran\AppData\Local\Temp\test.logger.txt</filePath>
+              <description><![CDATA[log]]></description>
+            </attachment>
+          </attachments>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
